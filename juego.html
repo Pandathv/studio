@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memu</title>
+    <link rel="stylesheet" href="syles.css">
+    <link rel="stylesheet" href="buscar.css">
+    <link rel="stylesheet" href="galery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="./serach.js" defer></script>
+    <script src="./galer.js" defer></script>
+</head>
+
+<body>
+    <!--barra superior del titulo para darle un diseño lindo-->
+    <div class="menu">
+        <label class="Icon"><a href="index.html">Studio Ghibli Time!</label></a>
+    </div>
+    <!-- Ejercicios parte 2: 1, 2 y 5 -->
+    <div class="search" id="search">
+        <h2>Buscar un personaje</h2>
+        <div class="results">
+            <input type="text" id="searchC" placeholder="Escribe el nombre del personaje" class="search1">
+            <span id="counterL" class="counter">0/50</span>
+            <p id="result" class="msg"></p>
+            <p id="result2" class="msg"></p>
+        </div>
+        <!-- Ejercicio parte 1: 4-->
+        <h2>Filtrar por Película</h2>
+        <select id="filtro" class="selector">
+            <option value="todas">Todas las películas</option>
+            <option value="totoro">Mi Vecino Totoro</option>
+            <option value="chihiro">El Viaje de Chihiro</option>
+            <option value="mononoke">La Princesa Mononoke</option>
+            <option value="valle">Nausicaä del Valle del Viento</option>
+            <option value="howls">El Castillo Vagabundo</option>
+            <option value="kiki">Kiki's Delivery Service</option>
+            <option value="wind">The Wind Rises</option>
+            <option value="chihiro">El viaje de Chihiro</option>
+            <option value="porco">Porco Rosso</option>
+            <option value="arrietty">The Secret World of Arrietty</option>
+            <option value="agua">Puedo escuchar el mar</option>
+            <option value="ponyo">Ponyo and the Secret of the Little Mermaid</option>
+            <option value="garza">El chico y la Garza</option>
+            <option value="amapolas">La colina de las amapolas</option>
+            <option value="corazon">Susurros del corazón</option>
+            <option value="cielo">El castillo en el cielo</option>
+            <option value="tumba">La tumba de las luciérnagas</option>
+        </select>
+        <p id="result2" class="msg"></p>
+    </div>
+
+    <!--Aca inician las imagenes-->
+    <div class="galeria" id="galeria">
+        <!-- Las imágenes se ordenarán aleatoriamente al cargar -->
+        <div class="imag" data-category="totoro">
+            <img src="img/galery1.jpg" alt="1">
+        </div>
+        <div class="imag" data-category="howls">
+            <img src="img/galery2.gif" alt=" 2">
+        </div>
+        <div class="imag" data-category="howls">
+            <img src="img/galery3.jpg" alt=" 3">
+        </div>
+        <div class="imag" data-category="howls">
+            <img src="img/galery4.jpg" alt=" 4">
+        </div>
+        <div class="imag" data-category="kiki">
+            <img src="img/galery5.jpg" alt="5">
+        </div>
+        <div class="imag" data-category="kiki">
+            <img src="img/galery6.gif" alt="6">
+        </div>
+        <div class="imag" data-category="wind">
+            <img src="img/galery7.jpg" alt="7">
+        </div>
+        <div class="imag" data-category="chihiro">
+            <img src="img/galery8.jpg" alt="8">
+        </div>
+        <div class="imag" data-category="chihiro">
+            <img src="img/galery9.jpg" alt="9">
+        </div>
+        <div class="imag" data-category="arrietty">
+            <img src="img/galery10.jpg" alt="10">
+        </div>
+        <div class="imag" data-category="ponyo">
+            <img src="img/galery11.jpg" alt="11">
+        </div>
+        <div class="imag" data-category="chihiro">
+            <img src="img/galery12.jpg" alt="12">
+        </div>
+        <div class="imag" data-category="garza">
+            <img src="img/galery13.jpg" alt="13">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery14.jpg" alt="14">
+        </div>
+        <div class="imag" data-category="corazon">
+            <img src="img/galery15.gif" alt="15">
+        </div>
+        <div class="imag" data-category="corazon">
+            <img src="img/galery16.jpg" alt="16">
+        </div>
+        <div class="imag" data-category="corazon">
+            <img src="img/galery17.jpg" alt="17">
+        </div>
+        <div class="imag" data-category="cielo">
+            <img src="img/galery18.jpg" alt="18">
+        </div>
+        <div class="imag" data-category="cielo">
+            <img src="img/galery19.jpg" alt="19">
+        </div>
+        <div class="imag" data-category="cielo">
+            <img src="img/galery20.jpg" alt="10">
+        </div>
+        <div class="imag" data-category="cielo">
+            <img src="img/galery21.jpg" alt="21">
+        </div>
+        <div class="imag" data-category="tumba">
+            <img src="img/galery22.jpg" alt="22">
+        </div>
+        <div class="imag" data-category="tumba">
+            <img src="img/galery23.jpg" alt="23">
+        </div>
+        <div class="imag" data-category="tumba">
+            <img src="img/galery24.jpg" alt="22">
+        </div>
+        <div class="imag" data-category="arrietty">
+            <img src="img/galery25.gif" alt="25">
+        </div>
+        <div class="imag" data-category="chihiro">
+            <img src="img/galery26.gif" alt="26">
+        </div>
+        <div class="imag" data-category="totoro">
+            <img src="img/galery27.gif" alt="27">
+        </div>
+        <div class="imag" data-category="corazon">
+            <img src="img/galery28.jpg" alt="28">
+        </div>
+        <div class="imag" data-category="totoro">
+            <img src="img/galery29.jpg" alt="29">
+        </div>
+        <div class="imag" data-category="totoro">
+            <img src="img/galery30.jpg" alt="10">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery31.jpg" alt="31">
+        </div>
+        <div class="imag" data-category="garza">
+            <img src="img/galery32.jpg" alt="32">
+        </div>
+        <div class="imag" data-category="garza">
+            <img src="img/galery33.jpg" alt="33">
+        </div>
+        <div class="imag" data-category="garza">
+            <img src="img/galery34.jpg" alt="34">
+        </div>
+        <div class="imag" data-category="garza">
+            <img src="img/galery35.jpg" alt="34">
+        </div>
+        <div class="imag" data-category="valle">
+            <img src="img/galery36.jpg" alt="36">
+        </div>
+        <div class="imag" data-category="valle">
+            <img src="img/galery37.jpg" alt="36">
+        </div>
+        <div class="imag" data-category="valle">
+            <img src="img/galery38.jpg" alt="36">
+        </div>
+        <div class="imag" data-category="valle">
+            <img src="img/galery39.jpg" alt="36">
+        </div>
+        <div class="imag" data-category="valle">
+            <img src="img/galery40.jpg" alt="36">
+        </div>
+        <div class="imag" data-category="porco">
+            <img src="img/galery41.jpg" alt="41">
+        </div>
+        <div class="imag" data-category="porco">
+            <img src="img/galery42.jpg" alt="41">
+        </div>
+        <div class="imag" data-category="porco">
+            <img src="img/galery43.jpg" alt="41">
+        </div>
+        <div class="imag" data-category="porco">
+            <img src="img/galery44.jpg" alt="41">
+        </div>
+        <div class="imag" data-category="porco">
+            <img src="img/galery45.jpg" alt="41">
+        </div>
+        <div class="imag" data-category="agua">
+            <img src="img/galery46.jpg" alt="46">
+        </div>
+        <div class="imag" data-category="agua">
+            <img src="img/galery47.jpg" alt="46">
+        </div>
+        <div class="imag" data-category="agua">
+            <img src="img/galery48.jpg" alt="46">
+        </div>
+        <div class="imag" data-category="agua">
+            <img src="img/galery49.jpg" alt="46">
+        </div>
+        <div class="imag" data-category="agua">
+            <img src="img/galery50.jpg" alt="46">
+        </div>
+        <div class="imag" data-category="amapolas">
+            <img src="img/galery51.jpg" alt="51">
+        </div>
+        <div class="imag" data-category="amapolas">
+            <img src="img/galery52.jpg" alt="51">
+        </div>
+        <div class="imag" data-category="amapolas">
+            <img src="img/galery53.jpg" alt="51">
+        </div>
+        <div class="imag" data-category="amapolas">
+            <img src="img/galery54.jpg" alt="51">
+        </div>
+        <div class="imag" data-category="amapolas">
+            <img src="img/galery55.jpg" alt="51">
+        </div>
+         <div class="imag" data-category="ponyo">
+            <img src="img/galery56.jpg" alt="56">
+        </div>
+        <div class="imag" data-category="ponyo">
+            <img src="img/galery57.jpg" alt="56">
+        </div>
+        <div class="imag" data-category="ponyo">
+            <img src="img/galery58.jpg" alt="56">
+        </div>
+        <div class="imag" data-category="ponyo">
+            <img src="img/galery59.gif" alt="56">
+        </div>
+        <div class="imag" data-category="ponyo">
+            <img src="img/galery60.jpg" alt="56">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery61.jpg" alt="61">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery62.jpg" alt="61">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery63.jpg" alt="61">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery64.gif" alt="61">
+        </div>
+        <div class="imag" data-category="mononoke">
+            <img src="img/galery65.gif" alt="61">
+        </div>
+    </div>
+</body>
+
+</html>
