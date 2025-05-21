@@ -1,0 +1,58 @@
+*, *::before, *::after {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #efecec;
+}
+
+.menu {
+    background-color: rgb(162, 167, 175);
+    background-image: url(img/banner.jpg);
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border-bottom: 1px solid #8f8b8b;
+   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+   z-index: 1;
+}
+
+.Icon a{
+    text-decoration: none;
+    /*Esto es para que no se vea el subrayado*/
+    color: #000000;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.menu_item {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    gap: 20px;
+}
+
+.menu_item li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;/* esto es para que los links ocupen todo el espacio disponible dentro del li */
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+

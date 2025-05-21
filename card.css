@@ -1,0 +1,133 @@
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 20px); /* Resta el alto del menú */
+    padding: 0 20vw; /* Espacio a los lados */
+}
+
+/* Contenedor de tarjetas*/
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tarjeta */
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+/* Nombre sobre la imagen */
+.nombre {
+    position: absolute;
+    top: -7vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10; /* Mayor que la imagen */
+    color: rgb(231, 230, 230);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: "Winky Sans", sans-serif;
+    pointer-events: none; /* Permite clicks a través del texto */
+}
+
+.nombre h2 {
+    font-size: 28px;
+    margin: 0;
+    padding: 0 10px;
+    background-color: rgb(55, 153, 210);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Imagen */
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botón*/
+.button-class {
+    background-color: #0b0b0b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Winky Sans", sans-serif;
+    transition: all 0.3s;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.button-class:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.msg{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Winky Sans", sans-serif;
+}
+.gif-hover{
+    cursor: pointer;
+}
+
+
+.dos{
+    background-color: #fcfcfc;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px;
+    border-radius: 50%;
+   position: fixed;
+   bottom : 20px;
+   right: 20px;
+   z-index: 1000;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: all 0.5s ease-in-out;
+}
+
+.dos img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.dos:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

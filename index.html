@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memu</title>
+    <link rel="stylesheet" href="syles.css">
+    <link rel="stylesheet" href="card.css">
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <!--barra superior del titulo para darle un diseño lindo-->
+    <div class="menu">
+
+        <label class="Icon"><a href="index.html">Studio Ghibli Time!</label></a>
+    </div>
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        <!-- Contenedor de la imagen, actividad 1-->
+        <div class="card-container">
+            <!-- Tarjeta -->
+            <div class="card">
+                <!-- Nombre sobre la imagen -->
+                <div class="nombre">
+                    <h2 class="name">Nabo</h2>
+                </div>
+                <!-- Imagen -->
+                <div class="face front">
+                    <img src="img/uno.jpg" alt="nabo" id="nabo">
+                </div>
+            </div>
+            <!-- Botón de la tarjeta -->
+            <button class="button-class">Cambiar Imagen</button>
+        </div>
+        <!-- Contenedor de la imagen, actividad 2 y parte 2: 4-->
+        <div class="card-container">
+            <!-- Tarjeta -->
+            <div class="card" id="card2">
+                <!-- Nombre sobre la imagen -->
+                <div class="nombre">
+                    <h2 class="name">Totoro</h2>
+                </div>
+                <!-- Imagen -->
+                <div class="face front">
+                    <img src="img/unot.jpg" alt="Totoro" data-gif="img/dost.gif" class="gif-hover">
+                </div>
+            </div>
+            <p id="msgHover" class="msg"></p>
+        </div>
+    </div>
+    <a href="juego.html">
+    <button class="dos">
+        <img src="img/boton.jpg" alt="pelusa" data-gif="img/boton2.gif" class="gif-hover">
+    </button></a>
+</body>
+
+</html>
